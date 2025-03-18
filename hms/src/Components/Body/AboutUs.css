@@ -1,0 +1,34 @@
+/* AboutUs.css */
+
+.about-us {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-image {
+    width: 800px; /* Adjust the image width as needed */
+    height: auto;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .about-section {
+      flex-direction: row; /* Display as row on wider screens */
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+  /* Add more styles as needed */
+  

@@ -1,0 +1,106 @@
+
+
+
+.dashboard {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  
+  .doctor-section {
+    margin-bottom: 20px;
+  }
+  
+  
+  .doctor-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  
+  .patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  
+  .patient-table th {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  
+  .patient-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  
+  .patient-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  
+  .patient-table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  .close-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .logout-button-container{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .logout-button:hover {
+    background-color: #ff4d4d; 
+  }
+
+  .emergency-modal{
+    
+    background: rgba(175, 230, 250, 0.775);
+    border-radius: 10px;
+  }
+
+  .e-patient-table{
+    width: 100%;
+    background: rgba(175, 230, 250, 0.775);
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  .e-patient-table th {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  
+  .e-patient-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  
+  
+  
+  
+  .e-patient-table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  .table-heading{
+    display: flex;
+  }
