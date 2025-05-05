@@ -1,48 +1,51 @@
-
-
 .hospital-card {
-    display: flex;
-    flex-direction: row;
-    background-color: #9AD0C2;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    height: 300px;
-    margin: 1rem;
-    padding: 1rem;
-  }
-  
-  .hospital-image {
-    width: auto;
-    height: 200px;
-  }
-  
-  .card-content {
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  button.book-appointment-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 1rem;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .hospital-card {
-      max-width: 100%;
-      flex-direction: column;
-    }
+  display: flex;
+  flex-direction: row;
+  background-color: #9AD0C2;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  height: 300px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.hospital-image {
+  width: auto;
+  height: 200px;
+  max-width: 100%;
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+button.book-appointment-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hospital-card {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
   }
 
- 
+  .hospital-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -51,8 +54,17 @@
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
+  width: 100%;
+  max-width: 500px; /* Limit modal width */
+  box-sizing: border-box;
 }
 
+@media (max-width: 600px) {
+  .modal {
+    width: 90%;
+    padding: 15px;
+  }
+}
 
 form label {
   display: block;
@@ -68,7 +80,6 @@ form textarea {
   box-sizing: border-box;
 }
 
-
 form button {
   background-color: #4caf50;
   color: #fff;
@@ -81,7 +92,6 @@ form button {
 form button:hover {
   background-color: #45a049;
 }
-
 
 button {
   background-color: #f44336;
@@ -97,8 +107,8 @@ button:hover {
   background-color: #d32f2f;
 }
 
-.radio-group{
+.radio-group {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
-  
